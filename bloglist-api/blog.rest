@@ -1,0 +1,41 @@
+###
+
+GET http://localhost:3003/api/blogs/ HTTP/1.1
+
+###
+
+POST http://localhost:3003/api/blogs/ HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaW55ZGF5cyIsImlkIjoiNjBiZWQ1YTFhN2M5MTRmNjZhNGE1NGMwIiwiaWF0IjoxNjIzMTIwNTQ0fQ.EGEdpUQxOKvlHJZrdBnmrLt74Y0AMTLQXdMaeKuPpT8
+
+{
+    "title": "new rainydys",
+    "author": "ramiro arivilca",
+    "url": "http:/test",
+    "likes": 23,
+}
+
+###
+PUT http://localhost:3003/api/blogs/60bed588a7c914f66a4a54be HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "nessssssssssw blog",
+    "author": "ramiro asdsdsdsarivilca",
+    "url": "http:/test",
+    "likes": 26
+}
+
+###
+
+GET http://localhost:3003/api/blogs/60bcef86c743d00a3ac23ace HTTP/1.1
+
+###
+
+###
+
+DELETE http://localhost:3003/api/blogs/60bed588a7c914f66a4a54be HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaW55ZGF5cyIsImlkIjoiNjBiZWQ1YTFhN2M5MTRmNjZhNGE1NGMwIiwiaWF0IjoxNjIzMTIwNTQ0fQ.EGEdpUQxOKvlHJZrdBnmrLt74Y0AMTLQXdMaeKuPpT8
+
+###
+
